@@ -91,7 +91,6 @@
       </div>
       <!-- 圖片輪播 Carousel End-->
       <!-- 麵包屑 Breadcrumb-->
-      <!-- 麵包屑 Breadcrumb-->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="">現在位置：</li>
@@ -236,13 +235,29 @@
   <!-- 購物車側邊攔展開 start -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">購物車</h5>
+      <h5 class="offcanvas-title mt-3 ms-2" id="offcanvasExampleLabel">購物車</h5>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <div>
-        <p>您的購物車是空的</p>
-        <p>共 0 件商品</p>
+      <div class="cart-card">
+        <div class="row g-0 d-flex align-items-center">
+          <div class="col-md-2 image-container">
+            <img class="cart-card-img" src="/imgs/06.jpg" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-price">NT$200</p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="btn-group w-100" role="group" aria-label="Basic outlined example">
+              <button type="button" class="btn btn-outline-primary">-</button>
+              <input type="text" class="form-control text-center rounded-0" value="1">
+              <button type="button" class="btn btn-outline-primary">+</button>
+          </div>
+          </div>
+        </div>
       </div>
       <a href="" class="btn btn-primary">查看購物車</a>
     </div>
@@ -310,7 +325,7 @@
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
   </script>
-  <!-- 選擇文字框時，隱藏 placeholder 問字-->
+  <!-- 選擇文字框時，隱藏 placeholder 文字-->
   <script>
     // 當文字框獲得焦點時，隱藏 placeholder 文字
     document.querySelectorAll('.form-control').forEach(input => {

@@ -375,3 +375,58 @@ a.text-end:visited {
 .form-check-input:hover {
     border-color: #8D8266;
 }
+
+.image-container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden;
+}
+
+.cart-card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.cart-card .card-text small {
+  font-size: 0.875rem; 
+  color: #6c757d;
+}
+
+.btn-outline-primary {
+  color: #1D2330;
+  border-color: #1D2330;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #1D2330;
+  border-color: #1D2330;
+}
+
+.btn-check:focus+.btn-outline-primary,
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.25rem #DCDEDF;
+}
+
+.btn-check:checked+.btn-outline-primary:focus,
+.btn-check:active+.btn-outline-primary:focus,
+.btn-outline-primary:active:focus,
+.btn-outline-primary.active:focus,
+.btn-outline-primary.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem #DCDEDF;
+}
