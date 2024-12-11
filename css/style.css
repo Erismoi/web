@@ -288,7 +288,11 @@ h1 {
     font-size: 26px;
     color: #8D8266;
 }
-
+.form-control-login{
+  border: 1px solid white;
+  font-size: 18px;
+  width: 100%;
+}
 .custom-input {
     border: none;
     border-bottom: 1px solid #8D8266;
@@ -376,9 +380,9 @@ a.text-end:visited {
     border-color: #8D8266;
 }
 
+/*購物車側邊欄*/
+
 .image-container {
-  width: 100px;
-  height: 100px;
   display: flex;
   justify-content: center; 
   align-items: center; 
@@ -386,47 +390,61 @@ a.text-end:visited {
 }
 
 .cart-card-img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
+  max-height: 100%; 
+  max-width: 100%; 
+  margin: auto; 
+  display: block; 
+  object-fit: contain; 
+  object-position: center; 
 }
 
 .card-title {
-  font-size: 1.25rem;
+  font-size: 16px;
 }
 
-.cart-card .card-text small {
+.card-price{
+  font-size: 14px;
+  margin-block-end:0px !important;
+}
+
+.card-body{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.card-text small {
   font-size: 0.875rem; 
   color: #6c757d;
 }
 
+
 .btn-outline-primary {
-  color: #1D2330;
-  border-color: #1D2330;
+  color: #333;
+  border:1px solid white;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #1D2330;
-  border-color: #1D2330;
+  background-color: #333;
+  border-color: #333;
 }
 
-.btn-check:focus+.btn-outline-primary,
+.btn-outline-primary:active {
+  color: #fff;
+  background-color: #555 !important;
+  border-color: #555 !important;
+}
+
 .btn-outline-primary:focus {
-  box-shadow: 0 0 0 0.25rem #DCDEDF;
+  outline: none;
 }
 
-.btn-check:checked+.btn-outline-primary:focus,
-.btn-check:active+.btn-outline-primary:focus,
-.btn-outline-primary:active:focus,
-.btn-outline-primary.active:focus,
-.btn-outline-primary.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.25rem #DCDEDF;
+.form-control {
+  border: 1px solid white;
+  font-size: 18px;
+  width: 50px;
+  text-align: center;
 }
