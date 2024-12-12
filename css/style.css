@@ -426,18 +426,21 @@ a.text-end:visited {
   transition: all 0.2s ease-in-out;
 }
 
+/*--------按下+-的樣式需再調整------*/
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #333;
-  border-color: #333;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 
 .btn-outline-primary:active {
-  color: #fff;
-  background-color: #555 !important;
-  border-color: #555 !important;
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  background-color: #eaeaea !important;
+  border-color: #ddd !important;
 }
 
+/*----------------------------------*/
 .btn-outline-primary:focus {
   outline: none;
 }
@@ -447,4 +450,10 @@ a.text-end:visited {
   font-size: 18px;
   width: 50px;
   text-align: center;
+}
+
+.text-primary{
+  font-family: LXGW WenKai Mono TC, Tahoma, sans-serif !important;
+  font-size: 22px !important;
+  color: #8D8266 !important;
 }
